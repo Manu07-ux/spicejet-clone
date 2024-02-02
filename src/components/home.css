@@ -1,0 +1,91 @@
+    .carousel-container {
+        /* border:5px solid red; */
+        position: relative;
+        width: 100%;
+        max-width: 100vw;
+        margin: auto;
+        overflow: hidden;
+        height: 90vh;
+    }
+    
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-item {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    
+    .carousel-item img {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+
+    .booking-container {
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        /* transform: translateY(-50%); */
+        z-index: 2;
+      }
+      
+      .booking-tab-nav,
+      .booking-tab {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        width: 450px;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+      
+      .booking-tab-nav {
+        background-color: #ffffff;  
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        height: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-radius: 8px 8px 0 0; /* Rounded top corners */
+      }
+    
+      .booking-tab-nav {
+        justify-content: center;
+        display: flex;
+      }
+
+      .booking-tab-nav a{
+        margin-left: 20px;
+        border:1px solid black;
+      }
+      
+      .booking-tab {
+        background-color: #ffffff;  
+        height: 400px;
+        top: 30%; /* Adjust the top position as needed */
+        border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+
+      }
+      
+      
