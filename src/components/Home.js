@@ -35,26 +35,68 @@ const Home = () => {
 
   return (
     <div className="carousel-container">
-      <div className="booking-container">
-        <div className="booking-tab-nav">
-            <div>
-            <a>Flights</a>
-            </div>
-            <div>
-              <a>Check-In</a>
-            </div>
-            <div>
-              <a>Flight Status</a>
-            </div>
-            <div>
-              <a>Manage Booking</a>
-            </div>
-        </div>
-
         <div className="booking-tab">
-            hi
+            
+            <div className='form-content'>
+              <h2 className='headers'>Welcome aboard</h2>
+
+              <p>Let's go places!</p>
+                  <form>
+                        <input type='radio'></input>
+                        <label htmlFor=''>One Way</label>
+
+                        <input type='radio'></input>
+                        <label htmlFor=''>Round Trip</label>
+
+                        <br></br>
+                        
+                        <label htmlFor=''>From</label>
+                        <input type='text'></input>
+
+                        <label htmlFor=''>To</label>
+                        <input type="text"></input>
+
+                        <label htmlFor=''>Travel Date</label>
+                        <input type="date"></input>
+
+
+                        <br></br>
+                        <label htmlFor=''>Passengers</label>
+                        <input type='number'></input>
+
+                        <br></br>
+
+                        <table className='table-radio'>
+
+                              <tr>
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Family & Friends</label></td>
+
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Senior Citizen</label></td>
+
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Armed Forces</label></td>
+                              </tr>
+
+                              <tr>
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Family & Friends</label></td>
+
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Senior Citizen</label></td>
+
+                                <td><input type='radio'></input></td>
+                                <td><label htmlFor=''>Students</label></td>
+                              </tr>
+                        </table>
+
+                        <button type='submit' className='search-btn'>Search Flight</button>
+
+                  </form>
+            </div>
+            
         </div>
-      </div>
       
     <div className="carousel-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
       {images.map((image, index) => (
